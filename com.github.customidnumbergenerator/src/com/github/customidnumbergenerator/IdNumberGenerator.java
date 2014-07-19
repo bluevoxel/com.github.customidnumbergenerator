@@ -144,7 +144,7 @@ public class IdNumberGenerator extends Application {
 		// LAYOUT -> CENTER -> BOTTOM
 		
 		HBox hboxItemsToGenerate = new HBox(5);
-		hboxItemsToGenerate.setMinHeight(28);
+		hboxItemsToGenerate.setMinHeight(35);
 		hboxItemsToGenerate.setMinWidth(vbox.getWidth());
 		hboxItemsToGenerate.setId("hbox_dnd");
 		hboxItemsToGenerate.getStylesheets().add(style);
@@ -317,7 +317,7 @@ public class IdNumberGenerator extends Application {
 		
 		BorderPane.setMargin(generatedIdNumberTextField, new Insets(10, 10, 10, 10));
 		BorderPane.setMargin(vbox, new Insets(10, 10, 10, 10));
-		BorderPane.setMargin(hboxButtons, new Insets(10, 10, 10, 10));
+		BorderPane.setMargin(hboxButtons, new Insets(10, 10, 15, 10));
 		
 		return layout;
 	}
@@ -326,7 +326,7 @@ public class IdNumberGenerator extends Application {
 	public void start(Stage stage) throws Exception {
 		stage.setScene(new Scene(createContent()));
 		stage.setWidth(400);
-		stage.setHeight(225);
+		stage.setHeight(255);
 		stage.setTitle("Custom ID Number Generator");
 		stage.getIcons().add(new Image("/com/github/customidnumbergenerator/Icon_Logo.png"));
 		stage.show();
