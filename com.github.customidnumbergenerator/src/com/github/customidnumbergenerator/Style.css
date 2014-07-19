@@ -1,0 +1,63 @@
+@CHARSET "UTF-8";
+
+#layout {
+	-fx-background-color: #1d1d1d;
+}
+
+#textfield {
+	-fx-background-color: #1d1d1d;
+	-fx-border-width: 1px;
+	-fx-border-color: #e2e2e2;
+	-fx-padding: 2px;
+	-fx-text-fill: #d8d8d8;
+}
+
+#label {
+	
+	-fx-padding: 2px;   
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color: #1d1d1d;
+    -fx-text-fill: #d8d8d8;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+	
+}
+
+#label:hover {
+    -fx-background-color: #3a3a3a;
+}
+
+#hbox_dnd {
+	-fx-background-color: #1d1d1d;
+	
+	-fx-border-width: 1px;
+	-fx-border-color: #e2e2e2;
+	-fx-padding: 2px;
+	
+	-fx-content: "drag and drop here snippets from above";
+}
+
+#button {
+	-fx-padding: 5 22 5 22;
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color: #1d1d1d;
+    -fx-text-fill: #d8d8d8;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+#button:hover {
+    -fx-background-color: #3a3a3a;
+}
+
+#button:pressed, #button:default:hover:pressed {
+  -fx-background-color: white;
+  -fx-text-fill: #1d1d1d;
+}
+
+.tooltip {
+	-fx-font-size: 11;
+	-fx-background-color: linear-gradient(#3a3a3a, #000000);
+}
